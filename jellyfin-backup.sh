@@ -10,8 +10,6 @@ echo "Jellyfin Backup Script"
 #WEB=$JELLYFIN_WEB_DIR
 #LOGS=$JELLYFIN_LOG_DIR
 
-start=$SECONDS
-
 sudo rm -rf /home/$USER/backup
 echo "Deleted old backups"
 mkdir /home/$USER/backup
@@ -26,6 +24,5 @@ sudo cp $JELLYFIN_WEB_DIR /home/$USER/backup/web
 echo "Backed up web directory"
 sudo cp $JELLYFIN_LOG_DIR /home/$USER/backup/logs
 echo "Backed up log directory"
-echo "Done!
-
-duration=$(( SECONDS - start ))
+echo "- - -"
+echo "Done - Finished copying all Jellyfin data directories."
