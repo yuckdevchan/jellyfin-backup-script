@@ -1,5 +1,9 @@
 #!/bin/bash
 
-echo "Make sure you are using the default Jellyfin directories! If not change them below:"
+echo "Jellyfin Backup Script"
 
-DATA=$HOME/.local/share/jellyfin
+DATA=$JELLYFIN_DATA_DIR
+CONFIG=$JELLYFIN_CONFIG_DIR
+CACHE=$JELLYFIN_CACHE_DIR
+WEB=$JELLYFIN_WEB_DIR
+LOGS=$JELLYFIN_LOG_DIR
